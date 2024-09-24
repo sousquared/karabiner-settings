@@ -1,0 +1,35 @@
+{
+    "description": "Control + U/O to Backspace/Delete",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "u",
+                "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["option", "command"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "delete_or_backspace"
+                }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "o",
+                "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["option", "command"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "delete_forward"
+                }
+            ]
+        }
+    ]
+}
