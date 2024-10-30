@@ -1,0 +1,41 @@
+{
+    "description": "Custom mapping [control+p→'_' and control+[→'+']",
+    "manipulators": [
+        {
+            // Control + p を "_"（アンダースコア）にマッピング
+            "type": "basic",
+            "from": {
+                "key_code": "p",
+                "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["shift", "option", "command"]
+                }
+            },
+            "to": [
+                {
+                    // アンダースコアは Shift + ハイフンで入力
+                    "key_code": "hyphen",
+                    "modifiers": ["shift"]
+                }
+            ]
+        },
+        {
+            // Control + [ を "+"（プラス）にマッピング
+            "type": "basic",
+            "from": {
+                "key_code": "open_bracket",
+                "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["shift", "option", "command"]
+                }
+            },
+            "to": [
+                {
+                    // プラスは Shift + イコールで入力
+                    "key_code": "equal_sign",
+                    "modifiers": ["shift"]
+                }
+            ]
+        }
+    ]
+}
