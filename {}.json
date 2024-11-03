@@ -1,0 +1,41 @@
+{
+    "description": "Custom mapping [control+;→'{' and control+'→'}']",
+    "manipulators": [
+        {
+            // Control + ; を "{" にマッピング
+            "type": "basic",
+            "from": {
+                "key_code": "semicolon",
+                "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["shift", "option", "command"]
+                }
+            },
+            "to": [
+                {
+                    // "{" は Shift + [ で入力
+                    "key_code": "open_bracket",
+                    "modifiers": ["shift"]
+                }
+            ]
+        },
+        {
+            // Control + ' を "}" にマッピング
+            "type": "basic",
+            "from": {
+                "key_code": "quote",
+                "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["shift", "option", "command"]
+                }
+            },
+            "to": [
+                {
+                    // "}" は Shift + ] で入力
+                    "key_code": "close_bracket",
+                    "modifiers": ["shift"]
+                }
+            ]
+        }
+    ]
+}
