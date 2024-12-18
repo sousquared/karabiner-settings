@@ -1,4 +1,5 @@
 {
+    "description": "HHKB arrows",
     "manipulators": [
         {
             "description": "右Shift + [, ;, ', / を矢印キーにする",
