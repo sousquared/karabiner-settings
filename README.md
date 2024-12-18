@@ -10,3 +10,6 @@
 ## HHKBキーバインド
 ref: https://qiita.com/ry0559/items/5035514641bd379b58d0
 <img width="588" alt="image" src="https://github.com/user-attachments/assets/f3a4f66f-4dbe-43c0-9910-f9a3e1d65117" />
+
+## TODO
+- HHKBにcommandとright shiftを一緒に押した時の端移動や範囲選択を追加する
